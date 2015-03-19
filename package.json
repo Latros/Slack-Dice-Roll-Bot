@@ -1,0 +1,26 @@
+{
+  "name": "Slack-Hodor-Bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Latros/Slack-Hodor-Bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Latros/Slack-Hodor-Bot/issues"
+  },
+  "homepage": "https://github.com/Latros/Slack-Hodor-Bot",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "cors": "^2.5.3",
+    "express": "^4.12.3",
+    "http": "0.0.0"
+  }
+}
