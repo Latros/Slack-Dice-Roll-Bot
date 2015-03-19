@@ -21,14 +21,14 @@
 
   app.post('/', function (req, res) {
     console.log(req.body);
-    console.log('Received a hodor message!');
-
-    var punctuations = ['!', '!!', '?!', ' . . .'];
+    console.log('Received a dice roll message!');
 
     var userName = req.body.user_name;
     var botPayload = {
-      text: 'Hodor' + punctuations[Math.floor(Math.random() * punctuations.length)]
+      text: 'Flipping a coin.... ' + flips[Math.floor(Math.random() * flips.length)]
     };
+
+    console.log(req.body);
 
     // avoid infinite loop
     if (userName !== 'slackbot') {
@@ -39,6 +39,14 @@
         .end();
     }
   });
+
+  function performRoll() {
+
+  }
+
+  function sendResponse() {
+
+  }
 
   http.listen(process.env.PORT, function () {
     console.log('API server listening on *:' + process.env.PORT);
