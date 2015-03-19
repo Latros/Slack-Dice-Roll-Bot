@@ -25,7 +25,7 @@
 
     var userName = req.body.user_name;
     var botPayload = {
-      text: 'Rolling a dice.... '
+      text: 'Rolling a dice.... rolled ' + Math.floor((Math.random() * 6) + 1) + '!'
     };
 
     console.log(req.body);
